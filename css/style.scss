@@ -233,23 +233,49 @@ img {
 }
 
 
- .why-adrofx-awards__list {
+.why-adrofx-awards__list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     @extend %list-default;
     gap: 20px;
     align-items: center;
- }
+}
 
- .why-adrofx-awards-header__title {
+.why-adrofx-awards-header__title {
     font-size: $font-size-30-16;
     margin-bottom: 30px;
- }
+}
 
- @media (max-width: 767.98px) {
-    .why-adrofx-awards__list {
-        grid-template-columns: 1fr;
-        justify-items: center;
+
+//  ===============================
+.award__list {
+    @include flex-grid(250px, 20px);
+    @extend %list-default;
+}
+
+.award-header {
+    margin-bottom: 30px;
+}
+
+.award-header__title {font-size: $font-size-30-16;}
+
+
+@media (max-width: 767.98px) {
+    .why-adrofx-awards__list,
+    .award__list {
+        @include flex-grid(200px, 20px);
+       
     }
     
- }
+}
+
+@media (max-width: 575.98px) {
+    .why-adrofx-awards__list,
+    .award__list {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .award-header__title  {text-align: center;}
+}
