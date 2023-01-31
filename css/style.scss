@@ -232,50 +232,54 @@ img {
     transition: 0.3s ease-in;
 }
 
-
-.why-adrofx-awards__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.award__list {
+    @include flex-grid(380px, 10px);
     @extend %list-default;
-    gap: 20px;
     align-items: center;
 }
 
-.why-adrofx-awards-header__title {
-    font-size: $font-size-30-16;
-    margin-bottom: 30px;
-}
-
-
-//  ===============================
-.award__list {
-    @include flex-grid(250px, 20px);
-    @extend %list-default;
-}
-
+.why-adrofx-awards-header__title,
 .award-header {
     margin-bottom: 30px;
 }
 
-.award-header__title {font-size: $font-size-30-16;}
+.why-adrofx-awards-header__title,
+.award-header__title {
+    font-size: $font-size-30-16;
+}
 
+.why-adrofx-awards__list {
+    @include flex-grid(250px,10px );
+    @extend %list-default;
+    align-items: center;
+}
 
-@media (max-width: 767.98px) {
-    .why-adrofx-awards__list,
+.why-adrofx-awards-header {
+    margin-bottom: 30px;
+}
+
+@media (max-width:991.98px) {
     .award__list {
-        @include flex-grid(200px, 20px);
-       
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 10px;
+        align-items: center;
     }
     
 }
 
-@media (max-width: 575.98px) {
-    .why-adrofx-awards__list,
+@media (max-width:575.98px) {
+    .award-header {text-align: center;}
+
+  
     .award__list {
         grid-template-columns: 1fr;
-        align-items: center;
         justify-items: center;
     }
 
-    .award-header__title  {text-align: center;}
+
+    .why-adrofx-awards__list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
