@@ -233,7 +233,7 @@ img {
 }
 
 
- .awards__list {
+ .why-adrofx-awards__list {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     @extend %list-default;
@@ -241,13 +241,13 @@ img {
     align-items: center;
  }
 
- .awards-header__title {
+ .why-adrofx-awards-header__title {
     font-size: $font-size-30-16;
     margin-bottom: 30px;
  }
 
  @media (max-width: 767.98px) {
-    .awards__list {
+    .why-adrofx-awards__list {
         grid-template-columns: 1fr;
         justify-items: center;
     }

@@ -160,7 +160,7 @@ img {
   margin-top: 50px;
 }
 
-.awards__list {
+.why-adrofx-awards__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -177,20 +177,20 @@ img {
   transition: 0.3s ease-in;
 }
 
-.awards__list {
+.why-adrofx-awards__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
 }
 
-.awards-header__title {
+.why-adrofx-awards-header__title {
   font-size: clamp(1rem, 0.62rem + 1.62vw, 1.88rem);
   margin-bottom: 30px;
 }
 
 @media (max-width: 767.98px) {
-  .awards__list {
+  .why-adrofx-awards__list {
     grid-template-columns: 1fr;
     justify-items: center;
   }
