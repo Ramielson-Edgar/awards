@@ -179,63 +179,14 @@ img {
 
 .awards__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   align-items: center;
 }
 
-.awards-header__title {
-  font-size: clamp(1rem, 0.62rem + 1.62vw, 1.88rem);
-}
-
-.awards__body-description {
-  font-size: 13px;
-  font-weight: 100;
-}
-
-.awards__body {
-  border-left: 2px solid var(--blue-500);
-  padding-left: 15px;
-}
-
-.awards-header {
-  margin-bottom: 35px;
-}
-
-.awards__item {
-  display: flex;
-  align-items: center;
-}
-
-.awards__img-container {
-  margin-right: 10px;
-}
-
-.awards__body-title {
-  font-size: 0.875rem;
-}
-
-.awards__body-text {
-  color: var(--dark-400);
-  font-size: 0.813rem;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 575.98px) {
-  .awards-header {
-    text-align: center;
-  }
+@media (max-width: 767.98px) {
   .awards__list {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-  .awards__item {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-  }
-  .awards__img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
