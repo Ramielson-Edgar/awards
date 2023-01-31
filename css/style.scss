@@ -241,6 +241,11 @@ img {
     align-items: center;
  }
 
+ .awards-header__title {
+    font-size: $font-size-30-16;
+    margin-bottom: 30px;
+ }
+
  @media (max-width: 767.98px) {
     .awards__list {
         grid-template-columns: 1fr;

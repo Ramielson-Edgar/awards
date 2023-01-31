@@ -184,6 +184,11 @@ img {
   align-items: center;
 }
 
+.awards-header__title {
+  font-size: clamp(1rem, 0.62rem + 1.62vw, 1.88rem);
+  margin-bottom: 30px;
+}
+
 @media (max-width: 767.98px) {
   .awards__list {
     grid-template-columns: 1fr;
